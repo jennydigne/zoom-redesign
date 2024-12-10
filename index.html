@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoom redesign</title>
+  <link rel="stylesheet" href="./src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body class="h-screen">
+  <header class="bg-gradient-to-t from-blue-300 to-blue-100 h-3/4 lg:h-[95%]">
+    <div class="flex justify-between p-8 h-14 items-center bg-blue-300 fixed top-0 left-0 right-0">
+      <div class="flex items-center gap-6">
+        <img class="h-5" src="img/zoom-logo.svg">
+        <button
+          class="hidden lg:flex gap-4 bg-white text-gray-500 text-sm pt-0.5 pb-1 px-3 rounded-lg border border-gray-700 hover:cursor-text">
+          <span>Sök</span> <span><i class="fa-solid fa-magnifying-glass text-gray-800"></i></span>
+        </button>
+        <div class="lg:hidden"><i class="fa-solid fa-magnifying-glass text-gray-800"></i></div>
+      </div>
+      <div class="lg:hidden"><i class="fa-solid fa-bars text-xl text-gray-800"></i></div>
+      <nav class="hidden lg:flex gap-6 items-center">
+        <a class="flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700 font-semibold" href="#">Produkter<i
+            class="fa-solid fa-angle-down"></i></a>
+        <a class="flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700 font-semibold" href="#">Lösningar<i
+            class="fa-solid fa-angle-down"></i></a>
+        <a class="flex items-center gap-1 text-sm text-gray-700 hover:text-blue-700 font-semibold" href="#">Resurser<i
+            class="fa-solid fa-angle-down"></i></a>
+        <a class="text-sm text-gray-700 hover:text-blue-700 font-semibold" href="#">Planer och priser</a>
+        <button
+          class="bg-gray-100 hover:bg-gray-300 text-gray-800 font-semibold text-sm pb-2 pt-1 px-3 rounded-xl border border-gray-700">
+          Registrera dig
+        </button>
+        <button
+          class="bg-gray-100 hover:bg-gray-300 text-gray-800 font-semibold text-sm pb-2 pt-1 px-3 rounded-xl border border-gray-700">
+          Logga in
+        </button>
+      </nav>
+    </div>
+    <div class="flex flex-col items-center">
+      <h1 class="text-2xl lg:text-6xl text-gray-800 font-bold leading-tight 
+      text-center lg:w-2/3 mt-32 lg:mt-40">En plattform för obegränsade mänskliga kontakter</h1>
+      <p class="text-gray-600 text-center lg:text-lg w-11/12 lg:w-2/3 mt-8">Driv fram förändringar med AI
+        Companion, förnya teamsamarbeten, förbättra kundrelationerna och möjliggör en smidig upplevelse med ett urval av
+        appar och integreringar.</p>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold pb-3 pt-2 px-4 rounded-xl border border-blue-900 mt-8 lg:mt-8">
+        Upptäck Zoom
+      </button>
+    </div>
+  </header>
+  <div class="flex flex-col lg:flex-row justify-around p-3 bg-gray-100 mx-auto w-11/12 lg:w-10/12 my-3 rounded-xl">
+    <div class="flex flex-col lg:w-1/2 p-5 lg:p-10">
+      <h2 class="text-xl lg:text-2xl font-bold text-gray-800 text-center lg:text-left">Gå från information till handling
+        med AI Companion</h2>
+      <p class="text-gray-600 text-sm lg:text-base mt-8">Få mer gjort med AI Companion 2.0 genom att ta fram viktig
+        information, prioritera det viktigaste och omvandla varje interaktion till aktion.</p>
+      <p class="text-gray-600 text-sm lg:text-base mt-4">Zoom AI Companion gör
+        arbetsdagen mer produktiv med hjälp av mötessammanfattningar, komposition av meddelanden och idéskapande som ger
+        dig tid över.</p>
+      <button
+        class="hidden lg:block bg-blue-500 hover:bg-blue-700 text-white font-semibold w-1/5 pb-2 pt-1 rounded-xl border border-blue-900 mt-8">
+        Läs mer
+      </button>
+    </div>
+    <img class="p-3 lg:w-2/5" src="img/zoom_ai.png">
+    <button
+      class="lg:hidden bg-blue-500 hover:bg-blue-700 text-white font-semibold w-1/4 self-center pb-2 pt-1 rounded-xl border border-blue-900 mt-8 mb-5">
+      Läs mer
+    </button>
+  </div>
+  <div class="bg-gray-100 w-11/12 lg:w-10/12 m-auto mb-3 flex flex-col items-center h-1/5 lg:h-1/3 rounded-xl">
+    <h2 class="text-xl lg:text-2xl text-center font-bold text-gray-800 mt-10">Redo att komma igång med Zoom?</h2>
+    <div class="flex items-end gap-6"><button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold pb-2 pt-1 px-4 rounded-xl border border-blue-900 mt-8">
+        Registrera dig
+      </button>
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-semibold pb-2 pt-1 px-4 rounded-xl border border-gray-700">
+        Planer och priser
+      </button>
+    </div>
+  </div>
+  <footer class="bg-gradient-to-b from-blue-300 to-blue-100 h-auto absolute w-full">
+    <nav class="grid grid-cols-2 lg:grid-cols-4 gap-y-5 py-8 pl-10 lg:pl-20">
+      <ul>
+        <h5 class="text-sm text-gray-800 font-semibold mb-2">Om oss</h5>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Zoom-blogg</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Kunder</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Vårt team</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Jobbmöjligheter</li>
+      </ul>
+      <ul>
+        <h5 class="text-sm text-gray-800 font-semibold mb-2">Ladda ner</h5>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Zoom Workplace App
+        </li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Zoom Rooms-app</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Zoom Rooms Controller
+        </li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Webbläsartillägg</li>
+      </ul>
+      <ul>
+        <h5 class="text-sm text-gray-800 font-semibold mb-2">Försäljning</h5>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Kontakta
+          säljavdelningen</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Planer och priser
+        </li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Begär en demo</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Webbinarier och
+          evenemang</li>
+      </ul>
+      <ul>
+        <h5 class="text-sm text-gray-800 font-semibold mb-2">Support</h5>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Testa Zoom</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Konto</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Supportcenter</li>
+        <li class="text-xs text-gray-600 hover:text-blue-700 leading-relaxed hover:cursor-pointer">Utbildningscenter
+        </li>
+      </ul>
+    </nav>
+    <div class="flex justify-evenly mb-6 lg:w-1/5 lg:ml-16">
+      <button class="bg-gray-100 hover:bg-gray-300 h-7 w-7 rounded-lg border border-gray-700"><i
+          class="fa-brands fa-linkedin-in text-gray-700"></i></button>
+      <button class="bg-gray-100 hover:bg-gray-300 h-7 w-7 rounded-lg border border-gray-700"><i
+          class="fa-brands fa-x-twitter text-gray-700"></i></button>
+      <button class="bg-gray-100 hover:bg-gray-300 h-7 w-7 rounded-lg border border-gray-700"><i
+          class="fa-brands fa-youtube text-gray-700"></i></button>
+      <button class="bg-gray-100 hover:bg-gray-300 h-7 w-7 rounded-lg border border-gray-700"><i
+          class="fa-brands fa-facebook-f text-gray-700"></i></button>
+      <button class="bg-gray-100 hover:bg-gray-300 h-7 w-7 rounded-lg border border-gray-700"><i
+          class="fa-brands fa-instagram text-gray-700"></i></button>
+    </div>
+    <p class="text-gray-800 text-xs text-center py-2 bg-blue-300">Upphovsrätt ©2024 Zoom Communications, Inc. Med
+      ensamrätt.</p>
+  </footer>
+</body>
+
+</html>
